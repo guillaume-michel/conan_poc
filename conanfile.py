@@ -7,6 +7,8 @@ class Test1Recipe(ConanFile):
 
     def requirements(self):
         self.requires("protobuf/3.21.9")
+        self.requires("boost/1.77.0")
+
 
     def build_requirements(self):
         self.tool_requires("protobuf/3.21.9")
