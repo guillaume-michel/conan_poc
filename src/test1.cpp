@@ -1,4 +1,4 @@
-#include <proto/animal.pb.h>
+#include <animal.pb.h>
 #include <boost/program_options.hpp>
 
 int main() {

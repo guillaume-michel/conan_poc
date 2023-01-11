@@ -6,12 +6,14 @@ class Test1Recipe(ConanFile):
     generators = "CMakeToolchain", "CMakeDeps", "VirtualBuildEnv"
 
     def requirements(self):
-        self.requires("protobuf/3.21.9")
+        # self.requires("protobuf/3.21.9")
+        self.requires("protobuf/3.5.1.1")
         self.requires("boost/1.77.0")
 
 
     def build_requirements(self):
-        self.tool_requires("protobuf/3.21.9")
+        # self.tool_requires("protobuf/3.21.9")
+        self.tool_requires("protobuf/3.5.1.1")
 
     def layout(self):
         cmake_layout(self)
